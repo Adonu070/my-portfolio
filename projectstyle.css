@@ -1,0 +1,48 @@
+/* global */
+:root {
+  --primary: #22C55E;
+  --dark-text: #111827;
+  --secondary-text: #6B7280;
+  --background: #F8FAFC;
+  --card-background: #FFFFFF;
+  --border: #E2E8F0;
+  --light-green: #DCFCE7;
+
+
+  /* font size */
+  --font-size-2-5rem:2.5rem;
+  --font-size-2rem:2rem;
+  --font-size-1-5rem:1.5rem;
+ --font-size-1rem:1rem;
+
+
+}
+
+body {
+  background: var(--background);
+  color: var(--dark-text);
+  font-family: 'poppins',sans-serif;
+  margin: 0%;
+  box-sizing: 0;
+  padding: 0rem;
+  
+}
+.container{
+  max-width:1200px;
+  margin: 0 auto;
+}
+button {
+  background: var(--primary);
+  color:var(--card-background);
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.name{
+font-weight: 700;
+font-size: var(--font-size-2rem);
+}
+/* global end */

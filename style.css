@@ -1,0 +1,357 @@
+/* global */
+:root {
+  --primary: #22C55E;
+  --dark-text: #111827;
+  --secondary-text: #6B7280;
+  --background: #F8FAFC;
+  --card-background: #FFFFFF;
+  --border: #E2E8F0;
+  --light-green: #DCFCE7;
+
+
+  /* font size */
+  --font-size-2-5rem:2.5rem;
+  --font-size-2rem:2rem;
+  --font-size-1-5rem:1.5rem;
+ --font-size-1rem:1rem;
+
+
+}
+
+body {
+  background: var(--background);
+  color: var(--dark-text);
+  font-family: 'poppins',sans-serif;
+  margin: 0%;
+  box-sizing: 0;
+  padding: 0rem;
+  
+}
+.container{
+  max-width:1200px;
+  margin: 0 auto;
+}
+button {
+  background: var(--primary);
+  color:var(--card-background);
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.name{
+font-weight: 700;
+font-size: var(--font-size-2rem);
+}
+/* global end */
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+/* images */
+.my-image{
+  width: 30rem;
+  height: auto;
+}
+
+.my-image{
+ 
+  mask-image: linear-gradient( to right,  transparent 0%,black 25%,black 100% );
+
+  /* mask-image: linear-gradient( to top,  transparent 0%,black 25%,black 100% ); */
+  .projects-images{
+  width: 100%;
+}
+
+}
+
+.skills-image{
+  width: 2rem;
+}
+.laptopwith-coffee{
+  width: 30rem;
+}
+/* images end */
+.main-page{
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.main-page-text{
+  width: 50%;
+  height: 100%;
+}
+
+
+
+.top-nav{
+display: flex;
+gap: 2rem;
+align-items: center;
+}
+.top-nav span{
+  font-weight: 500;
+cursor: pointer;
+}
+.green{
+  color: var(--primary);
+}
+
+.card {
+  background: var(--card-background);
+  border: 1px solid var(--border);
+}
+.logos{
+width: 2rem;
+}
+
+
+.foward-logo{
+  width: 1rem;
+}
+
+.colored-texts{
+  color: var(--primary);
+}
+
+
+
+
+/* my projects */
+
+.my-project{
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  background-color: var(--card-background);
+  border: 1px solid var(--border);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.p-width{
+  width: 60%;
+}
+
+
+.p-texts{
+  font-size: var(--font-size-1rem);
+}
+
+
+
+.project-skils-and-link{
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-skills{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-skills span{
+background-color: var(--border);
+padding: 0.5rem;
+border-radius: 2rem;
+}
+
+.website-name{
+  font-size: var(--font-size-2rem);
+  font-weight: 700;
+}
+
+.projects{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* my projects end */
+
+/* skils & tools */
+.skils-and-tools{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-between;
+   border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.skills-and-tools-text{
+  width: 50%;
+
+}
+
+
+.skils-rap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--card-background);
+  width: 100%;
+  height: auto;
+  border:2px solid var(--border);
+  padding:1rem 0.5rem;
+  border-radius: 1rem;
+  justify-content: center;
+}
+
+.skills-rage{
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+ 
+}
+
+/* skills & tools end */
+
+/* abourt me */
+
+.about-me{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.about-me-text{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.journey-head-text{
+  width: 50%;
+
+}
+
+.journey-cards{
+  display: flex;
+  align-items: center;
+}
+.journey-text{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.journey-cards-rap{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.journey-rap{
+  display: flex;
+}
+
+/* footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+
+footer span{
+  font-size: var(--font-size-1-5rem);
+  font-weight: 500;
+}
+.footer-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+/* massage */
+.masaage{
+  display: flex;
+  align-items: center;
+  background-color: var(--border);
+}
+
+.massage-rap{
+  display: flex;
+  flex-direction: column;
+ gap: 1rem;
+ background-color: var(--card-background);
+
+}
+/* massage end */
+/* footer end */
+
+
+
+
+
+
+
+
+
+
+
+/* responsive design */
+
+/* width 100px up */
+
+/* @media (max-width:50rem){ */
+/*  */
+
+
+/* } */
+
+
+/* width 800px -100px */
+/* @media (max-width:50rem){ */
+/*  */
+/* html{
+  font-size: 57%;
+}
+.main-page{
+  display: flex;
+  flex-direction: column;
+  
+}
+} */
+
+
+/* width 500px-800px */
+/* @media (max-width:31rem){
+
+html{
+  font-size: 50%;
+}
+
+} */
+
+
+
+
+/* width 300px -500px */
+/* @media (max-width:18.7rem){
+
+html{
+  font-size: 43%;
+}
+
+
+
+
+}  */
