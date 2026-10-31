@@ -2,16 +2,27 @@ const projects=document.querySelector('.projects')
 const skillsandtools=document.querySelector('.skills-rage')
 
 const projectproperties={
-  // Mobile data website
-image:'images/densubsite.png',
-name:'Densubsite',
-description:'Mobile data & Airtime-to-cash with a clean and simple interface',
+ technology:{
 hmtl:'HTML',
 css:'CSS',
 javascript:'Javascipt',
+
+  },
+
+
 linkimage:'logo/open-outline.svg',
 
+
+  // Mobile data website
+  densubsite:{
+    image:'images/densubsite.png',
+name:'Densubsite',
+description:'Mobile data & Airtime-to-cash with a clean and simple interface',
+ 
+ },
+
 // skills and tools
+
 sklills:{
 htmlimage:'logo/html-5-svgrepo-com.svg',
 htmlname:'HTML',
@@ -30,32 +41,68 @@ githubname:'GitHub',
 
 vscodeimage:'logo/vscode-svgrepo-com.svg',
 vscodename:'VScode',
+},
+
+
+
+// merichrunchy
+maricrunchy:{
+  image:'images/crunchy.png',
+  name:'Meri-chruny',
+  description:'E-commerce website frontend with modern UI and good user experience',
+
 }
-
-
 
 }
 // densub website
 projects.innerHTML+=`<div class="my-project">
- <img class="projects-images" src="${projectproperties.image}" alt="">
+ <img class="projects-images" src="${projectproperties.densubsite.image}" alt="">
  <div>
 
- <span class="website-name">${projectproperties.name}</span>
- <p class="p-width">${projectproperties.description}</p>
+ <span class="website-name">${projectproperties.densubsite.name}</span>
+ <p class="p-width">${projectproperties.densubsite.description}</p>
 
 
  <!-- skills used -->
   <div class="project-skils-and-link">
     <div class="project-skills">
-    <span>${projectproperties.hmtl}</span>
-    <span>${projectproperties.css}</span>
-    <span>${projectproperties.javascript}</span>
+    <span>${projectproperties.technology.hmtl}</span>
+    <span>${projectproperties.technology.css}</span>
+    <span>${projectproperties.technology.javascript}</span>
   </div>
  <img class="logos" src="${projectproperties.linkimage}" alt="">
 
   </div>
   
 </div> </div>`;
+
+// densubsite website end
+
+// merit-chrunchy
+
+projects.innerHTML+=`<div class="my-project">
+ <img class="projects-images" src="${projectproperties.maricrunchy.image}" alt="">
+ <div>
+
+ <span class="website-name">${projectproperties.maricrunchy.name}</span>
+ <p class="p-width">${projectproperties.maricrunchy.description}</p>
+
+
+ <!-- skills used -->
+  <div class="project-skils-and-link">
+    <div class="project-skills">
+    <span>${projectproperties.technology.hmtl}</span>
+    <span>${projectproperties.technology.css}</span>
+    <span>${projectproperties.technology.javascript}</span>
+  </div>
+ <img class="logos" src="${projectproperties.linkimage}" alt="">
+
+  </div>
+  
+</div> </div>`
+// merit-crunchy end
+
+
 
 skillsandtools.innerHTML+=`<div class="skils-rap">
   <img class="skills-image" src="${projectproperties.sklills.htmlimage}" alt="">
@@ -90,24 +137,54 @@ skillsandtools.innerHTML+=`<div class="skils-rap">
 
 const allsections=document.querySelectorAll('.all-sections');
 const homenav=document.querySelector('.home-nav');
-const projectnav=document.querySelector('.projects-nav')
+const homenavsign=document.querySelector('.home-nav-sign')
+const projectnav=document.querySelector('.projects-nav');
+const projectnavsign=document.querySelector('.project-nav-sign');
+const menueblur=document.querySelector('.menue-blur')
+const menu=document.querySelector('.menu')
   homenav.classList.add('green')
+  homenavsign.style.display='block';
+menueblur.style.display='none';
 
 function showpage(page){
   allsections.forEach(allsections=>{
+    projectnavsign.style.display='none';
+     homenavsign.style.display='none';
+     menueblur.style.display='none'
 if(page==='Projects'){
     allsections.style.display='none';
     projectnav.classList.add('green')
       homenav.classList.remove('green')
-    
+      projectnavsign.style.display='block'
   }
 
   else if(page==='Home'){
      allsections.style.display='block';
        homenav.classList.add('green')
-         projectnav.classList.remove('green')
+         projectnav.classList.remove('green');
+           homenavsign.style.display='block';
   }
   })
   
 }
 
+
+const theblur=document.querySelector('.theblur')
+const sendmassage=document.querySelector('.send-massage')
+
+
+
+theblur.addEventListener('click',()=>{
+  theblur.style.display='none';
+})
+
+sendmassage.addEventListener('click',() =>{
+  theblur.style.display='block';
+})
+
+menu.addEventListener('click',()=>{
+  menueblur.style.display='block'
+})
+menueblur.addEventListener('click',()=>{
+  menueblur.style.display='none'
+})

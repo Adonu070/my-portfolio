@@ -30,6 +30,7 @@ body {
 .container{
   max-width:1200px;
   margin: 0 auto;
+  width: 85%;
 }
 button {
   background: var(--primary);
@@ -43,7 +44,16 @@ button {
 
 .name{
 font-weight: 700;
-font-size: var(--font-size-2rem);
+font-size: var(--font-size-1-5rem);
+}
+
+a{
+  text-decoration: none;
+  color: var(--dark-text);
+  width: auto;
+}
+p{
+  margin: 0;
 }
 /* global end */
 header{
@@ -51,21 +61,26 @@ header{
   justify-content: space-between;
   width: 100%;
   margin-bottom: 4rem;
+  padding: 1rem 0rem;
+ 
 }
 
 /* images */
-.my-image{
+.mian-page-image{
   width: 30rem;
   height: auto;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
-.my-image{
+.mian-page-image{
  
   mask-image: linear-gradient( to right,  transparent 0%,black 25%,black 100% );
 
   /* mask-image: linear-gradient( to top,  transparent 0%,black 25%,black 100% ); */
   .projects-images{
   width: 100%;
+
 }
 
 }
@@ -75,6 +90,7 @@ header{
 }
 .laptopwith-coffee{
   width: 30rem;
+  border-radius: 1rem;
 }
 /* images end */
 .main-page{
@@ -83,27 +99,58 @@ header{
   height: 20rem;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
 }
 .main-page-text{
   width: 50%;
   height: 100%;
 }
 
+.main-page-text button{
+  margin-bottom: 1rem;
+}
+
+
+.my-medias{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 
 
 .top-nav{
 display: flex;
-gap: 2rem;
+gap: 4rem;
 align-items: center;
 }
 .top-nav span{
   font-weight: 500;
 cursor: pointer;
+/* margin-bottom: 1rem; */
 }
+
+.top-nav-rap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
 .green{
   color: var(--primary);
 }
+
+.home-nav-sign,.project-nav-sign{
+  background-color: var(--primary);
+width: 100%;
+height: 0.1rem;
+ display: none;
+}
+
+
 
 .card {
   background: var(--card-background);
@@ -111,6 +158,7 @@ cursor: pointer;
 }
 .logos{
 width: 2rem;
+height: 2rem;
 }
 
 
@@ -135,15 +183,20 @@ width: 2rem;
   border: 1px solid var(--border);
   padding: 1rem;
   border-radius: 1rem;
+  gap: 1rem;
+  height:auto;
 }
 
 .p-width{
-  width: 60%;
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 
 .p-texts{
   font-size: var(--font-size-1rem);
+  margin-bottom: 2rem;
 }
 
 
@@ -166,9 +219,11 @@ border-radius: 2rem;
 }
 
 .website-name{
-  font-size: var(--font-size-2rem);
+  font-size: var(--font-size-1rem);
   font-weight: 700;
+  
 }
+
 
 .projects{
   display: flex;
@@ -176,7 +231,12 @@ border-radius: 2rem;
   width: 100%;
   margin-bottom: 2rem;
 }
-
+.projects-rap{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 1rem;
+}
 /* my projects end */
 
 /* skils & tools */
@@ -225,8 +285,11 @@ border-radius: 2rem;
   /* align-items: center; */
   justify-content: space-between;
   width: 100%;
-  gap: 1rem;
+  gap: 3rem;
   margin-bottom: 3rem;
+  height: auto;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
 }
 
 .about-me-text{
@@ -237,27 +300,44 @@ border-radius: 2rem;
 
 .journey-head-text{
   width: 50%;
-
+margin-bottom: 3rem;
+display: flex;
+flex-direction: column;
+gap: 1rem;
 }
 
 .journey-cards{
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 .journey-text{
   display: flex;
   align-items: center;
   flex-direction: column;
+  
+}
+
+.journey-text span{
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-start;
+  color: var(--dark-text);
+  font-weight: 600;
+  
 }
 
 .journey-cards-rap{
   display: flex;
   gap: 1rem;
   width: 100%;
+  align-self: flex-end;
+  
 }
 
 .journey-rap{
   display: flex;
+  gap: 2rem;
 }
 
 /* footer */
@@ -265,7 +345,10 @@ footer{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  border-top: 1px solid var(--border);
+  padding-top:  1rem;
+  
 }
 
 
@@ -279,24 +362,60 @@ footer span{
   align-items: center;
  
 }
+.footer-text P{
+  cursor: pointer;
+}
 
 /* massage */
 .masaage{
   display: flex;
   align-items: center;
   background-color: var(--border);
-}
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
 
+}
+.masaage:active{
+
+  background-color: var(--light-green);
+
+}
+.send-massage{
+  margin-top: 1rem;
+}
 .massage-rap{
   display: flex;
   flex-direction: column;
  gap: 1rem;
  background-color: var(--card-background);
+ padding: 2rem;
+ /* position: fixed;
+top: 10%; */
+ /* left: 50%; */
+ /* transform: translate(50%); */
+ position: relative;
+ justify-self: center;
+align-self: center;
+top: 20%;
+border-radius: 2rem;
 
+
+}
+
+.theblur{
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  display: none;
 }
 /* massage end */
 /* footer end */
-
+.menu{
+  display: none;
+}
 
 
 
@@ -311,47 +430,223 @@ footer span{
 
 /* width 100px up */
 
-/* @media (max-width:50rem){ */
+@media (max-width:50rem){
 /*  */
 
 
-/* } */
+}
 
 
-/* width 800px -100px */
-/* @media (max-width:50rem){ */
+/* width 800px -1000px */
+@media (max-width:50rem){
 /*  */
-/* html{
+html{
   font-size: 57%;
 }
+
+
+
 .main-page{
-  display: flex;
-  flex-direction: column;
+
+  margin-bottom: 10rem;
+  height: 100%;
+}
+
+.mian-page-image{
+  height: auto;
   
 }
-} */
+.my-project{
+ 
+}
+
+.projects{
+  width: 100%;
+}
+
+.about-me{
+  height: 10rem;
+  margin-bottom: 10rem;
+}
+
+
+.journey-head-text{
+  width: 90%;
+
+}
+
+.journey-rap{
+  display: flex;
+  
+  width: 100%;
+}
+
+.journey-head-text{
+  margin-bottom: 1rem;
+}
+.laptopwith-coffee{
+ height: 100%;
+}
+
+.skils-rap{
+
+  min-width: 8rem;
+
+
+}
+
+
+.skills-rage{
+   overflow-x: scroll;
+   scrollbar-width: none;
+   width: 100%;
+  /* display: grid;
+  grid-template-columns: repeat(1fr,1fr,);
+grid-template-rows: repeat(1fr,1fr);
+width: 100%; */
+
+}
+
+}
 
 
 /* width 500px-800px */
-/* @media (max-width:31rem){
+@media (max-width:31rem){
 
 html{
   font-size: 50%;
 }
 
-} */
+.kenneth{
+ padding-left: -4rem;
+}
+.footer-text{
+  display: flex;
+  align-content: flex-start;
+}
 
 
 
-
-/* width 300px -500px */
-/* @media (max-width:18.7rem){
-
-html{
-  font-size: 43%;
 }
 
 
 
 
-}  */
+/* width 300px -500px */
+@media (max-width:18.7rem){
+
+html{
+  font-size: 43%;
+}
+header{
+  margin-bottom: 1rem;
+}
+.main-page{
+
+    display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  
+}
+
+.mian-page-image{
+  width: 100%;
+   mask-image: linear-gradient(to right, transparent 0%, black 0%,black 25%);
+  border-radius: 1rem;
+  
+}
+
+
+.main-page-text{
+  margin-bottom: 10rem;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.projects{
+  flex-direction: column;
+}
+
+.my-project{
+  width: 100%;
+}
+
+.skils-and-tools{
+  flex-direction: column;
+}
+
+.skills-rage{
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+
+.skils-rap{
+  width: 100%;
+}
+
+
+.laptopwith-coffee{
+  display: none;
+}
+
+.journey-head-text{
+  width: 90%;
+}
+.destop-top-nav{
+  display: none;
+}
+.menu{
+  display: inline;
+}
+
+.menue-section{
+background-color:var(--card-background) ;
+height: 50%;
+width: 60%;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+padding: 1rem;
+}
+
+.menue-blur{
+  position: fixed;
+  backdrop-filter: blur(1px);
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  z-index: 1 ;
+}
+button{
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.menu-btn{
+  color: var(--background);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.send-massage{
+  width: 100%;
+  font-size: var(--font-size-1rem);
+}
+
+.contact{
+  display: none;
+}
+footer{
+  width: 100%;
+ align-items: center;
+}
+
+.about-me{
+  margin-bottom: 7rem;
+}
+ 
+
+} 
