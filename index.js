@@ -170,7 +170,7 @@ if(page==='Projects'){
 
 
 const theblur=document.querySelector('.theblur')
-const sendmassage=document.querySelector('.send-massage')
+const sendmassage=document.querySelector('.send-massage');
 
 
 
