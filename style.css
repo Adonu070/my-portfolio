@@ -491,6 +491,9 @@ gap: 2rem;
 padding: 1rem;
 }
 
+.menue-section button{
+  height: 4rem;
+}
 
 
 .menue-blur{
