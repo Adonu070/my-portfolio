@@ -40,6 +40,7 @@ button {
   border-radius: 2rem;
   display: flex;
   gap: 0.5rem;
+  align-items: center;
 }
 
 .name{
@@ -109,7 +110,7 @@ header{
 }
 
 .main-page-text button{
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 
@@ -117,6 +118,7 @@ header{
   display: flex;
   align-items: center;
   gap: 1rem;
+
 }
 
 
@@ -248,6 +250,7 @@ border-radius: 2rem;
    border-top: 1px solid var(--border);
   padding-top: 1rem;
   margin-bottom: 3rem;
+  align-items: center;
 }
 
 .skills-and-tools-text{
@@ -274,6 +277,10 @@ border-radius: 2rem;
   gap: 2rem;
   width: 100%;
  
+}
+
+.skill-arrow-direction{
+  display: none;
 }
 
 /* skills & tools end */
@@ -315,7 +322,7 @@ gap: 1rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+  font-size: var(--font-size-1rem);
 }
 
 .journey-text span{
@@ -332,7 +339,7 @@ gap: 1rem;
   gap: 1rem;
   width: 100%;
   align-self: flex-end;
-  
+ 
 }
 
 .journey-rap{
@@ -417,6 +424,11 @@ border-radius: 2rem;
   display: none;
 }
 
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 
@@ -428,27 +440,112 @@ border-radius: 2rem;
 
 /* responsive design */
 
-/* width 100px up */
+/* width 1000px up */
 
-@media (max-width:50rem){
-/*  */
-
-
-}
-
-
-/* width 800px -1000px */
-@media (max-width:50rem){
+@media (max-width:63rem){
 /*  */
 html{
   font-size: 57%;
 }
 
 
+.main-page{
+  flex-direction: column;
+  margin-bottom: 50rem;
+  gap: 1rem;
+}
+
+
+.main-page-text{
+  width: 100%;
+}
+
+.mian-page-image{
+ width: 100%;
+}
+
+.my-project{
+  width: 100%;
+}
+
+.projects{
+  flex-direction: column;
+}
+
+
+.destop-top-nav{
+  display: none;
+}
+
+.menu{
+  display: inline;
+}
+.menue-section{
+
+  background-color:var(--card-background) ;
+height: 50%;
+width: 60%;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+padding: 1rem;
+}
+
+
+
+.menue-blur{
+
+  position: fixed;
+  backdrop-filter: blur(1px);
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  z-index: 1 ;
+}
+
+
+.menu-btn{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: var(--card-background);
+}
+
+.journey-text{
+
+font-size: 0.7rem;
+}
+
+.view-my-project-and-media{
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+
+
+
+}
+
+
+
+
+/* width 800px -1000px */
+@media (max-width:50rem){
+
+
+
+/*  9px/16*/
+html{
+  font-size: 62%;
+}
+
+
 
 .main-page{
 
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
   height: 100%;
 }
 
@@ -505,6 +602,34 @@ grid-template-rows: repeat(1fr,1fr);
 width: 100%; */
 
 }
+.skill-arrow-direction{
+  display: inline;
+}
+
+.menue-section{
+ 
+  background-color:var(--card-background) ;
+height: 50%;
+width: 60%;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+padding: 1rem;
+}
+
+
+
+.menue-blur{
+
+  position: fixed;
+  backdrop-filter: blur(1px);
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  z-index: 1 ;
+}
+
 
 }
 
@@ -527,6 +652,7 @@ html{
 
 
 }
+
 
 
 
@@ -557,7 +683,7 @@ header{
 
 
 .main-page-text{
-  margin-bottom: 10rem;
+  margin-bottom: 1rem;
   align-self: flex-start;
   width: 100%;
 }
@@ -600,7 +726,8 @@ header{
 }
 
 .menue-section{
-background-color:var(--card-background) ;
+  display: none;
+  background-color:var(--card-background) ;
 height: 50%;
 width: 60%;
 display: flex;
@@ -609,7 +736,10 @@ gap: 2rem;
 padding: 1rem;
 }
 
+
+
 .menue-blur{
+display: none;
   position: fixed;
   backdrop-filter: blur(1px);
   top: 0%;
@@ -618,6 +748,8 @@ padding: 1rem;
   left: 0%;
   z-index: 1 ;
 }
+
+
 button{
   width: 100%;
   justify-content: space-between;
@@ -646,6 +778,13 @@ footer{
 .about-me{
   margin-bottom: 7rem;
 }
- 
+.journey-text {
+font-size: var(--font-size-1rem);
+ }
+
+.view-my-project-and-media{
+  flex-direction: column;
+  align-items: normal;
+}
 
 } 

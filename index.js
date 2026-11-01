@@ -18,6 +18,7 @@ linkimage:'logo/open-outline.svg',
     image:'images/densubsite.png',
 name:'Densubsite',
 description:'Mobile data & Airtime-to-cash with a clean and simple interface',
+link:'https://adonu070.github.io/Densubsite/',
  
  },
 
@@ -50,12 +51,16 @@ maricrunchy:{
   image:'images/crunchy.png',
   name:'Meri-chruny',
   description:'E-commerce website frontend with modern UI and good user experience',
+  link:'https://adonu070.github.io/crunchy/',
 
 }
 
 }
 // densub website
-projects.innerHTML+=`<div class="my-project">
+projects.innerHTML+=`<a href="${projectproperties.densubsite.link}"><div class="my-project">
+
+
+
  <img class="projects-images" src="${projectproperties.densubsite.image}" alt="">
  <div>
 
@@ -74,13 +79,14 @@ projects.innerHTML+=`<div class="my-project">
 
   </div>
   
-</div> </div>`;
+</div></div> </a>`;
 
 // densubsite website end
 
 // merit-chrunchy
 
-projects.innerHTML+=`<div class="my-project">
+projects.innerHTML+=`<a href="${projectproperties.maricrunchy.link}">
+<div class="my-project">
  <img class="projects-images" src="${projectproperties.maricrunchy.image}" alt="">
  <div>
 
@@ -99,7 +105,7 @@ projects.innerHTML+=`<div class="my-project">
 
   </div>
   
-</div> </div>`
+</div> </div></a>`
 // merit-crunchy end
 
 
